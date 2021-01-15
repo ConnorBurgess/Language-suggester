@@ -34,7 +34,7 @@ border-bottom: 20px solid brown;
   border: 4px solid grey;  
 }
 
-.hidden-question {
+.hidden-question, #dog-picture, #cat-picture {
   display: none;
 }
 

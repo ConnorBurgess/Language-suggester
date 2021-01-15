@@ -28,7 +28,7 @@ $(document).ready(function() {
       const fifthAnswer = parseInt($("#fifth-selection").val());
       const sixthAnswer = parseInt($("#sixth-selection").val());
       if (secondAnswer === 1 && fourthAnswer === 2) {
-        $("#output").text("Well, " + nameInput + " I'd probably learn C# in your case.");;
+        $("#output").text("Well, " + nameInput + " I'd probably learn C# in your case.");
       }
       else if (secondAnswer === 2 && thirdAnswer === 2) {
         $("#output").text("So hey, " + nameInput + " you should probably learn Java. // Why do Java programmers have to wear glasses? Because they don’t C!#");
@@ -45,8 +45,11 @@ $(document).ready(function() {
       else {
         $("#output").text("So hey, " + nameInput + " I'm giving you my most default recommendation: learn Pseudocode! Woohoo!");
       }
-
     }, 5500); 
+    if (sixthAnswer === 1) {
+      $("#dog-picture").show();
+      console.log("hello")
+    }
   });
 
 });
