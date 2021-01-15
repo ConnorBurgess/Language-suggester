@@ -24,8 +24,13 @@ $(document).ready(function() {
     
     }, 2000); 
     setTimeout(function(){
-      
-      $("#output").text("So hey, " + nameInput + " I'd probably learn ruby.");
+      const secondAnswer = parseInt($("#second-selection").val());
+      const thirdAnswer = parseInt($("#third-selection").val());
+      const fourthAnswer = parseInt($("#fourth-selection").val());
+      const fifthAnswer = parseInt($("#fifth-selection").val());
+      const sixthAnswer = parseInt($("#sixth-selection").val());
+      alert(secondAnswer);
+      $("#output").text("So hey, " + nameInput + " you should probably learn Java. // Why do Java programmers have to wear glasses? Because they don’t C#! ");
     }, 5500); 
   });
 
