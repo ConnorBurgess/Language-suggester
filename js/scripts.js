@@ -27,6 +27,7 @@ $(document).ready(function() {
       const fourthAnswer = parseInt($("#fourth-selection").val());
       const fifthAnswer = parseInt($("#fifth-selection").val());
       const sixthAnswer = parseInt($("#sixth-selection").val());
+      $("#dog-picture").toggle();
       if (secondAnswer === 1 && fourthAnswer === 2) {
         $("#output").text("Well, " + nameInput + " I'd probably learn C# in your case.");
       }
@@ -45,11 +46,13 @@ $(document).ready(function() {
       else {
         $("#output").text("So hey, " + nameInput + " I'm giving you my most default recommendation: learn Pseudocode! Woohoo!");
       }
+
+      if (sixthAnswer === 1) {
+        $("#dog-picture").toggle();
+        console.log("hello")
+      }
     }, 5500); 
-    if (sixthAnswer === 1) {
-      $("#dog-picture").show();
-      console.log("hello")
-    }
+
   });
 
 });

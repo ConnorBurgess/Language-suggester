@@ -1,16 +1,21 @@
 h2 {
   font-size: 20px;
   text-align: center;
-  background-color: olivedrab;
+  background-color: brown;
   color: white;
 }
 
 .jumbotron {
-text-align: center;
-font-family: "comic sans ms";  
-background-color: goldenrod;
-border: 4px solid brown;
-border-bottom: 20px solid brown;
+  text-align: center;
+  font-family: "comic sans ms";  
+  background-color: skyblue;
+  border: 4px solid brown;
+  border-bottom: 20px solid brown;
+}
+
+.last-row {
+  margin-left: 15vw;
+
 }
 
 #first-question {
@@ -34,13 +39,17 @@ border-bottom: 20px solid brown;
   border: 4px solid grey;  
 }
 
-.hidden-question, #dog-picture, #cat-picture {
+.hidden-question {
   display: none;
+}
+
+#dog-picture, #cat-picture {
+  visibility: hidden;
 }
 
 .container {
   background-color: silver;
-  border: 10px solid olivedrab;
+  border: 10px solid brown;
 }
 
 .hidden-card {

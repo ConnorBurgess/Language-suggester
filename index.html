@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,18 +10,15 @@
   <title>Language-Suggester</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto+Mono:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
   <div class="container">
     <div class="jumbotron">
       <h1> Programming Language <strong><em>Suggest-o-Matic™</em></strong></h1>
       <h3 class="text-warning"> *We took your money in the name of technology*</h3>
       <br>
-      <h5 id="no-refunds" class="muted"> We believe you will be <em> highly</em> satisfied in discovering your <strong> perfect</strong> programming language match</h2>
+      <h5 id="no-refunds" class="muted"> We believe you will be <em> highly</em> satisfied in discovering your <strong></strong>perfect</strong> programming language match</h2>
     </div>
-
     <div class="row output-row">
       <div class="col-md-12">
         <div class="card">
@@ -33,102 +29,99 @@
       </div>
     </div>
     <div class="row">
-        <div class="col-md-12">
-          <div class="card">
-            <div id="first-question" class="card-body">
-              <h2 class="card-title">Let us find your perfect Programming language!</h2>
-              <form id="first-form">
-                <div class="form-group">
-                  <label for="first-input">Enter your name</label>
-                  <input id="first-input" type="text">
-                  <button type="submit" class="btn"><strong>START!</strong></button>
-                </div>
-              </form>
-            </div>
+      <div class="col-md-12">
+        <div class="card">
+          <div id="first-question" class="card-body">
+            <h2 class="card-title">Let us find your perfect Programming language!</h2>
+            <form id="first-form">
+              <div class="form-group">
+                <label for="first-input">Enter your name</label>
+                <input id="first-input" type="text">
+                <button type="submit" class="btn"><strong>START!</strong></button>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card">
-            <div id="second-question" class="hidden-question" class="card-body">
-              <h2 class="card-title">Which do you like?</h2>
-              <select class="form-control" id="second-selection">
-                <option value="1">Front-end Development</option>
-                <option value="2">Back-end Development</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card hidden-card">
-            <div id="third-question" class="hidden-question" class="card-body">
-              <h2 class="card-title">Which is better?</h2>
-              <select class="form-control" id="third-selection">
-                <option value="1">Startups</option>
-                <option value="2">Large companies</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card hidden-card">
-            <div id="fourth-question" class="hidden-question" class="card-body">
-              <h2 class="card-title">Favorite company?</h2>
-              <select class="form-control" id="fourth-selection">
-                <option value="1">Google</option>
-                <option value="2">Microsoft</option>
-                <option value="3">GitHub</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card hidden-card">
-            <div id="fifth-question" class="hidden-question" class="card-body">
-              <h2 class="card-title">Beach or Parks?</h2>
-              <select class="form-control" id="fifth-selection">
-                <option value="1">Take me to the beach!</option>
-                <option value="2">Love me some parks!</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="card hiddenCard">
-            <div id="sixth-question" class="hidden-question" class="card-body">
-              <h2 class="card-title">Dogs or cats?</h2>
-              <select class="form-control" id="sixth-question">
-                <option value="1">Dogs!</option>
-                <option value="2">Cats!</option>
-              </select>
-            </div>
-          </div>
-        </div>
-      </div>
-    <div class="row">
-      <div class="col-md-6 submit-col hidden-question">
-              <form id="submit-form">
-                <div class="submit-group">
-                  <button type="submit" class="btn submit-btn"><strong>Submit choices!</strong></button>
-                </div>
-              </form>
-            </div>
-          </div>
-      <div class="row picture-row">
-      <div class="col-md-6">
-        <div>
-        <img id="dog-picture" src="img/dog.png">
-        <img id="cat-picture" src="img/cat.jpg">
-        </div>
-     </div>
-     </div>
       </div>
     </div>
-
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div id="second-question" class="hidden-question" class="card-body">
+            <h2 class="card-title">Which do you like?</h2>
+            <select class="form-control" id="second-selection">
+              <option value="1">Front-end Development</option>
+              <option value="2">Back-end Development</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card hidden-card">
+          <div id="third-question" class="hidden-question" class="card-body">
+            <h2 class="card-title">Which is better?</h2>
+            <select class="form-control" id="third-selection">
+              <option value="1">Startups</option>
+              <option value="2">Large companies</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card hidden-card">
+          <div id="fourth-question" class="hidden-question" class="card-body">
+            <h2 class="card-title">Favorite company?</h2>
+            <select class="form-control" id="fourth-selection">
+              <option value="1">Google</option>
+              <option value="2">Microsoft</option>
+              <option value="3">GitHub</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row last-row">
+      <div class="col-md-4">
+        <div class="card hidden-card">
+          <div id="fifth-question" class="hidden-question" class="card-body">
+            <h2 class="card-title">Beach or Parks?</h2>
+            <select class="form-control" id="fifth-selection">
+              <option value="1">Take me to the beach!</option>
+              <option value="2">Love me some parks!</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card hiddenCard">
+          <div id="sixth-question" class="hidden-question" class="card-body">
+            <h2 class="card-title">Dogs or cats?</h2>
+            <select class="form-control" id="sixth-question">
+              <option value="1">Dogs!</option>
+              <option value="2">Cats!</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 submit-col hidden-question">
+        <form id="submit-form">
+          <div class="submit-group">
+            <button type="submit" class="btn submit-btn"><strong>Submit choices!</strong></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row picture-row">
+      <div class="col-md-6">
+        <div id="dog-picture">
+          <img src="/img/dog.png">
+          <img id="cat-picture" src="img/cat.jpg">
+        </div>
+      </div>
+    </div>
   </div>
-  
+  </div>
 </body>
 </html>
