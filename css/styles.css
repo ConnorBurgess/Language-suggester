@@ -1,3 +1,8 @@
-h1 {
-  
+.jumbotron {
+text-align: center;
+font-family: "comic sans ms";  
+}
+
+#firstQuestion {
+  text-align: center;
 }
