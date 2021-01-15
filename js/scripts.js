@@ -1,6 +1,5 @@
-$(document).ready(function() {
-  $("#first-form").submit(function(event) {
-    console.log("hello");
+$(document).ready(function () {
+  $("#first-form").submit(function (event) {
     $("#output").empty();
     const nameInput = $("input#first-input").val();
     $("#first-question").hide();
@@ -13,20 +12,21 @@ $(document).ready(function() {
     $("#output").text("Suggest-o-Matic % Hello there " + nameInput + ". Please direct your eyeballs to more relevant questions below.").fadeIn(2000);
     event.preventDefault();
   });
-    $("#submit-form").submit(function(event) {
+  $("#submit-form").submit(function (event) {
     const nameInput = $("input#first-input").val();
     $("#output").empty();
     $("#output").text("Suggest-o-Matic % " + nameInput + ", ok let me check this out. Remember: no refunds for happy users!");
     event.preventDefault();
-    setTimeout(function(){
+    setTimeout(function () {
       $("#output").text(" Processing...");
-    }, 2000); 
-    setTimeout(function(){
+    }, 2000);
+    setTimeout(function () {
       const secondAnswer = parseInt($("#second-selection").val());
       const thirdAnswer = parseInt($("#third-selection").val());
       const fourthAnswer = parseInt($("#fourth-selection").val());
       const fifthAnswer = parseInt($("#fifth-selection").val());
       const sixthAnswer = parseInt($("#sixth-selection").val());
+      console.log(secondAnswer, thirdAnswer, fourthAnswer, fifthAnswer, sixthAnswer);
       $("#dog-picture").toggle();
       if (secondAnswer === 1 && fourthAnswer === 2) {
         $("#output").text("Suggest-o-Matic % Well, " + nameInput + ", I'd probably learn C# in your case. You just seem like that kind of person.");
@@ -43,18 +43,18 @@ $(document).ready(function() {
       else if (fourthAnswer === 2) {
         $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", did you know that Microsoft is responsible for C#? I'd probably just learn C# if they are your favorite.");
       }
-      else if (fourthAnswer === 1) {
+      else if (fourthAnswer === 1 && thirdAnswer === 2) {
         $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", Google loves a Python developer. Why not check that out?");
       }
       else {
         $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", I would probably just learn C+. It is hard to understand. Just like you.");
       }
-
-      if (sixthAnswer === 1) {
-        $("#dog-picture").toggle();
-        console.log("hello")
-      }
-    }, 5500); 
+   
+        if (sixthAnswer === 1) {
+          $("#dog-picture").show();
+          console.log("hellos");
+        }
+    }, 5500);
 
   });
 

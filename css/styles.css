@@ -44,7 +44,12 @@ h2 {
 }
 
 #dog-picture, #cat-picture {
-  visibility: hidden;
+  display: none;
+}
+
+#cat-picture {
+  margin-left: 50vw;
+  width: 10vw;
 }
 
 .container {
