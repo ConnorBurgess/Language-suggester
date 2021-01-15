@@ -1,10 +1,11 @@
 $(document).ready(function () {
-  $("form#some-form").submit(function (event) {
-    const someInput = $("input#some-input").val();
+  $("#firstForm").submit(function(event) {
+    console.log("hello");
+    $("#output").empty();
+    const someInput = $("input#firstInput").val();
     $("#firstQuestion").hide();
-    $("#firstResponse").fadeIn(2000);
     $("#secondQuestion").fadeIn(2000);
-    $(".displayInput").text(someInput);
+    $("output").text(someInput);
 
     event.preventDefault();
   });
