@@ -10,8 +10,9 @@ border-bottom: 20px solid brown;
   text-align: center;
 }
 
-#thirdQuestion, #fourthQuestion {
-  padding-bottom: 2vw;
+#secondQuestion, #thirdQuestion, #fourthQuestion {
+  border-color: 8px solid red;
+  margin: 20px;
 }
 
 #output { 
@@ -38,4 +39,8 @@ border-bottom: 20px solid brown;
 
 .hiddenCard {
   margin-bottom: 3vw;
+}
+
+.submitGroup {
+  width: 20vw;
 }

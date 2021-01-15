@@ -17,7 +17,7 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1> Programming Language <em>Suggest-o-Matic™</em></h1>
+      <h1> Programming Language <strong><em>Suggest-o-Matic™</em></strong></h1>
       <h2 class="text-success"> We took your money in the name of technology</h2>
       <br>
       <h5 id="noRefunds" class="muted"> We believe you will be <em> highly</em> satisfied in discovering your <strong> perfect</strong> programming language match</h2>
@@ -27,7 +27,7 @@
       <div class="col-md-12">
         <div class="card">
           <div id="outputBox" class="card-body">
-            <p id="output"> text </p>
+            <p id="output"> . . . </p>
           </div>
         </div>
       </div>
@@ -74,7 +74,7 @@
         <div class="col-md-4">
           <div class="card hiddenCard">
             <div id="fourthQuestion" class="hiddenQuestion" class="card-body">
-              <h4 class="card-title">Which is your avorite?</h4>
+              <h2 class="card-title">Favorite company?</h2>
               <select class="form-control" id="fourthSelection">
                 <option>Google</option>
                 <option>Microsoft</option>
@@ -103,14 +103,22 @@
               <select class="form-control" id="fourthSelection">
                 <option>Dogs!</option>
                 <option>Cats!</option>
-                <option>GitHub</option>
               </select>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
+    <div class="row">
+      <div class="col-md-6">
+              <form id="submitForm">
+                <div class="submitGroup">
+                  <button type="submit" class="btn submit-btn"><strong>Submit choices!</strong></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
 </div>
 </body>
 </html>
