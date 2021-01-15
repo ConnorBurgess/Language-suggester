@@ -6,3 +6,12 @@ font-family: "comic sans ms";
 #firstQuestion {
   text-align: center;
 }
+
+.output { 
+  text-align: center;
+  font-size: 24px;
+}
+
+.hiddenQuestion {
+  display: none;
+}
