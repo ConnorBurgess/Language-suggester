@@ -14,10 +14,19 @@ $(document).ready(function() {
     event.preventDefault();
   });
     $("#submit-form").submit(function(event) {
+    const nameInput = $("input#first-input").val();
     $("#output").empty();
     $("#no-refunds").empty();
-    $("#no-refunds").text("Hi " + nameInput + ", please remember the golden rule: no refunds!").fadeIn(10000);
+    $("#output").text(nameInput + ", ok let me check this out. Remember: no refunds for happy users!");
     event.preventDefault();
-});
+    setTimeout(function(){
+      $("#output").text(" Processing...");
+    
+    }, 2000); 
+    setTimeout(function(){
+      
+      $("#output").text("So hey, " + nameInput + " I'd probably learn ruby.");
+    }, 5500); 
+  });
 
 });
