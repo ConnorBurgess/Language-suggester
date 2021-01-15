@@ -18,15 +18,15 @@
   <div class="container">
     <div class="jumbotron">
       <h1> Programming Language <strong><em>Suggest-o-Matic™</em></strong></h1>
-      <h2 class="text-success"> We took your money in the name of technology</h2>
+      <h3 class="text-warning"> *We took your money in the name of technology*</h3>
       <br>
-      <h5 id="noRefunds" class="muted"> We believe you will be <em> highly</em> satisfied in discovering your <strong> perfect</strong> programming language match</h2>
+      <h5 id="no-refunds" class="muted"> We believe you will be <em> highly</em> satisfied in discovering your <strong> perfect</strong> programming language match</h2>
     </div>
 
-    <div class="row outputRow">
+    <div class="row output-row">
       <div class="col-md-12">
         <div class="card">
-          <div id="outputBox" class="card-body">
+          <div id="output-box" class="card-body">
             <p id="output"> . . . </p>
           </div>
         </div>
@@ -35,12 +35,12 @@
     <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div id="firstQuestion" class="card-body">
+            <div id="first-question" class="card-body">
               <h2 class="card-title">Let us find your perfect Programming language!</h2>
-              <form id="firstForm">
+              <form id="first-form">
                 <div class="form-group">
-                  <label for="firstInput">Enter your name</label>
-                  <input id="firstInput" type="text">
+                  <label for="first-input">Enter your name</label>
+                  <input id="first-input" type="text">
                   <button type="submit" class="btn"><strong>START!</strong></button>
                 </div>
               </form>
@@ -51,33 +51,33 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card">
-            <div id="secondQuestion" class="hiddenQuestion" class="card-body">
+            <div id="second-question" class="hidden-question" class="card-body">
               <h2 class="card-title">Which do you like?</h2>
-              <select class="form-control" id="secondSelection">
-                <option>Front-end Development</option>
-                <option>Back-end Development</option>
+              <select class="form-control" id="second-selection">
+                <option value="1">Front-end Development</option>
+                <option value="2">Back-end Development</option>
               </select>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card hiddenCard">
-            <div id="thirdQuestion" class="hiddenQuestion" class="card-body">
+          <div class="card hidden-card">
+            <div id="third-question" class="hidden-question" class="card-body">
               <h2 class="card-title">Which is better?</h2>
-              <select class="form-control" id="thirdSelection">
-                <option>Startups</option>
-                <option>Large companies</option>
+              <select class="form-control" id="third-selection">
+                <option value="1">Startups</option>
+                <option value="2">Large companies</option>
               </select>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card hiddenCard">
-            <div id="fourthQuestion" class="hiddenQuestion" class="card-body">
+          <div class="card hidden-card">
+            <div id="fourth-question" class="hidden-question" class="card-body">
               <h2 class="card-title">Favorite company?</h2>
-              <select class="form-control" id="fourthSelection">
-                <option>Google</option>
-                <option>Microsoft</option>
+              <select class="form-control" id="fourth-selection">
+                <option value="1">Google</option>
+                <option value="2">Microsoft</option>
                 <option>GitHub</option>
               </select>
             </div>
@@ -86,23 +86,23 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <div class="card hiddenCard">
-            <div id="fifthQuestion" class="hiddenQuestion" class="card-body">
+          <div class="card hidden-card">
+            <div id="fifth-question" class="hidden-question" class="card-body">
               <h2 class="card-title">Beach or Parks?</h2>
-              <select class="form-control" id="thirdSelection">
-                <option>Take me to the beach!</option>
-                <option>Love me some parks!</option>
+              <select class="form-control" id="fifth-selection">
+                <option value="1">Take me to the beach!</option>
+                <option value="2">Love me some parks!</option>
               </select>
             </div>
           </div>
         </div>
         <div class="col-md-6">
           <div class="card hiddenCard">
-            <div id="sixthQuestion" class="hiddenQuestion" class="card-body">
+            <div id="sixth-question" class="hidden-question" class="card-body">
               <h2 class="card-title">Dogs or cats?</h2>
-              <select class="form-control" id="fourthSelection">
-                <option>Dogs!</option>
-                <option>Cats!</option>
+              <select class="form-control" id="sixth-question">
+                <option value="1">Dogs!</option>
+                <option value="2">Cats!</option>
               </select>
             </div>
           </div>
@@ -110,15 +110,23 @@
       </div>
 
     <div class="row">
-      <div class="col-md-6 submit-col hiddenQuestion">
+      <div class="col-md-6 submit-col hidden-question">
               <form id="submit-form">
-                <div class="submitGroup">
+                <div class="submit-group">
                   <button type="submit" class="btn submit-btn"><strong>Submit choices!</strong></button>
                 </div>
               </form>
             </div>
           </div>
+      <div class="row picture-row">
+      <div class="col-md-12">
+            <p id="output-picture"></p>
+          </div>
         </div>
+      </div>
+    </div>
+
   </div>
+  
 </body>
 </html>
