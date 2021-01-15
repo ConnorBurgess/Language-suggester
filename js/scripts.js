@@ -4,13 +4,25 @@ $(document).ready(function() {
     $("#output").empty();
     const nameInput = $("input#firstInput").val();
     $("#firstQuestion").hide();
-    $("#secondQuestion").fadeIn(4000);
-    $("#thirdQuestion").fadeIn(6000);
-    $("#fourthQuestion").fadeIn(8000);
-    $("#fifthQuestion").fadeIn(12000);
-    $("#sixthQuestion").fadeIn(12000);
-    $("#output").text("Hello there " + nameInput + ", your name isn't important at all in determining a programming language. Please direct your eyeballs to more relevant questions below.").fadeIn(2000);
-
+    $("#secondQuestion").fadeIn(2000);
+    $("#thirdQuestion").fadeIn(2000);
+    $("#fourthQuestion").fadeIn(2000);
+    $("#fifthQuestion").fadeIn(2500);
+    $("#sixthQuestion").fadeIn(2500);
+    $(".submit-col").fadeIn(5000);
+    $("#output").text("Hello there " + nameInput + ". Please direct your eyeballs to more relevant questions below.").fadeIn(2000);
     event.preventDefault();
   });
+    $("#submit-form").submit(function(event) {
+      $("#output").empty();
+      $("#secondQuestion").hide();
+      $("#thirdQuestion").hide();
+      $("#fourthQuestion").hide();
+      $("#fifthQuestion").hide();
+      $("#sixthQuestion").hide();
+      event.preventDefault();
+
+
+});
+
 });

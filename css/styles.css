@@ -11,7 +11,6 @@ border-bottom: 20px solid brown;
 }
 
 #secondQuestion, #thirdQuestion, #fourthQuestion {
-  border-color: 8px solid red;
   margin: 20px;
 }
 
@@ -34,13 +33,24 @@ border-bottom: 20px solid brown;
 
 .container {
   background-color: silver;
-  border: 10px solid grey;
+  border: 10px solid olivedrab;
 }
 
 .hiddenCard {
   margin-bottom: 3vw;
 }
 
-.submitGroup {
-  width: 20vw;
+.submit-btn {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  border-radius: 40px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  font-size: 40px;
+  margin:20px;
+}
+
+.submit-col {
+  margin-left: 20vw;
 }
