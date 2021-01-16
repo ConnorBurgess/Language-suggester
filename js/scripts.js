@@ -15,11 +15,12 @@ $(document).ready(function () {
   $("#submit-form").submit(function (event) {
     const nameInput = $("input#first-input").val();
     $("#output").empty();
-    $("#output").text("Suggest-o-Matic % " + nameInput + ", ok let me check this out. Happy users don't get refunds! Actually, just NO refunds.");
+    $("#output").text("Suggest-o-Matic % " + nameInput + ", ok let me check this out... Happy users don't get refunds! Actually, NO refunds.");
     event.preventDefault();
     setTimeout(function () {
       $("#output").text(" Processing...");
     }, 2000);
+
     setTimeout(function () {
       const secondAnswer = parseInt($("#second-selection").val());
       const thirdAnswer = parseInt($("#third-selection").val());

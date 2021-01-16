@@ -12,7 +12,7 @@
 
 ## Description
 
-_This project demonstrates branching and use of functions as well as JS, HTML, CSS, Bootstrap, JQuery knowledge through the creation of a "programming language suggester"
+_This project demonstrates branching and use of functions as well as JS, HTML, CSS, Bootstrap, JQuery knowledge through the creation of a "programming language suggester"_
 
 
 ## Setup/Installation Requirements
@@ -23,7 +23,7 @@ _This project demonstrates branching and use of functions as well as JS, HTML, C
 * _Open index.html_
 
 ## gh-pages
-* 
+* https://connorburgess.github.io/Language-suggester/
 
 ## Known Bugs
 
