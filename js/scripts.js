@@ -15,7 +15,7 @@ $(document).ready(function () {
   $("#submit-form").submit(function (event) {
     const nameInput = $("input#first-input").val();
     $("#output").empty();
-    $("#output").text("Suggest-o-Matic % " + nameInput + ", ok let me check this out. Remember: no refunds for happy users!");
+    $("#output").text("Suggest-o-Matic % " + nameInput + ", ok let me check this out. Happy users don't get refunds! Actually, just NO refunds.");
     event.preventDefault();
     setTimeout(function () {
       $("#output").text(" Processing...");
@@ -44,18 +44,17 @@ $(document).ready(function () {
         $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", did you know that Microsoft is responsible for C#? I'd probably just learn C# if they are your favorite.");
       }
       else if (fourthAnswer === 1 && thirdAnswer === 2) {
-        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", Google loves a Python developer. Why not check that out?");
+        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", Google loves a Python developer. Why not check Python out?");
       }
       else {
-        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", I would probably just learn C+. It is hard to understand. Just like you.");
+        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", I would probably just learn C+. It can be a little hard to understand. Just like you.");
       }
-   
-        if (sixthAnswer === 1) {
-          $("#dog-picture").show();
-          console.log("hellos");
-        }
+      if (sixthAnswer === 2) {
+        $("#cat-picture").show();
+      }
+      else {
+        $("#cat-picture").hide();
+      }
     }, 5500);
-
   });
-
 });
