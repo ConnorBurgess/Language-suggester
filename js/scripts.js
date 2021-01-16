@@ -33,22 +33,22 @@ $(document).ready(function () {
         $("#output").text("Suggest-o-Matic % Well, " + nameInput + ", I'd probably learn C# in your case. You just seem like that kind of person.");
       }
       else if (secondAnswer === 1 && thirdAnswer === 1 && fourthAnswer === 1 && fifthAnswer === 1 && sixthAnswer === 1) {
-        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", you chose pretty default answers there. I'm going to recommend learning: pseudocode!");
+        $("#output").text("Suggest-o-Matic % Hey, " + nameInput + ", you chose pretty default answers there. I'm going to recommend learning: pseudocode!");
       }
       else if (secondAnswer === 2 && thirdAnswer === 2) {
-        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", you should probably learn Java. // Why do Java programmers have to wear glasses? Because they don’t C!#");
+        $("#output").text("Suggest-o-Matic % Hey, " + nameInput + ", you should probably learn Java. By the way... why do Java programmers have to wear glasses? Because they don’t C#!");
       }
       else if (fourthAnswer === 3 && secondAnswer === 2) {
-        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", GitHub was started by prominent members of the Ruby community. Maybe check out Ruby?");
+        $("#output").text("Suggest-o-Matic % Hey, " + nameInput + ", did you know that GitHub was started by prominent members of the Ruby community. Maybe check out Ruby?");
       }
       else if (fourthAnswer === 2) {
-        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", did you know that Microsoft is responsible for C#? I'd probably just learn C# if they are your favorite.");
+        $("#output").text("Suggest-o-Matic % Hey, " + nameInput + ", did you know that Microsoft is responsible for C#? I'd probably just learn C# if they are your favorite.");
       }
       else if (fourthAnswer === 1 && thirdAnswer === 2) {
-        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", Google loves a Python developer. Why not check Python out?");
+        $("#output").text("Suggest-o-Matic % Hey, " + nameInput + ", Google loves a Python developer. Why not check Python out?");
       }
       else {
-        $("#output").text("Suggest-o-Matic % So hey, " + nameInput + ", I would probably just learn C+. It can be a little hard to understand. Just like you.");
+        $("#output").text("Suggest-o-Matic % Hey, " + nameInput + ", I would probably just learn C++. It can be a little hard to understand. Just like you.");
       }
       if (sixthAnswer === 2) {
         $("#cat-picture").show();
